@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+   
+   helloworld:
+     build: .
+     image: mbi.azurecr.io/event-service:${TAG}
+     container_name: event-service
+     ports: 
+       - 8082:8082
