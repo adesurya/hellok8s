@@ -29,10 +29,8 @@ node {
 
         // Deploy Application on K8s
         stage('Deploy Application on K8s') {
-            container('kubectl'){
                     sh("kubectl apply -f deployscript.yml")
                     sh("kubectl apply -f servicescript.yml")
-                }     
             }
 
 
