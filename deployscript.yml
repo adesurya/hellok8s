@@ -4,9 +4,7 @@ metadata:
   name: hellok8s
 spec:
   containers:
-  -name: privateregistry
-   image: mbiregistry.azurecr.io/hellok8s:latest
-   -name: httport
-    containerPort:8080
+  - name: privateregistry
+    image: mbiregistry.azurecr.io/hellok8s:latest
   imagePullSecrets:
   -name: acr-secret
